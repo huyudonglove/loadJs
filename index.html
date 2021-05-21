@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+       function loadJs(file){
+        var head = document.getElementsByTagName('head').item(0)
+        script = document.createElement('script');
+        script.src = file;
+        script.type = 'text/javascript';
+        head.appendChild(script);
+       }
+    </script>
+</head>
+<body>
+    <button onclick="loadJs('./1.js')">++</button>
+</body>
+</html>
